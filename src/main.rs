@@ -41,7 +41,7 @@ async fn replace_files_recur(config_path: PathBuf) -> std::io::Result<()> {
         let sub_entry = sub_entry_op.unwrap();
 
         if is_dir(sub_entry.path()).await {
-            return replace_files_recur(sub_entry.path()).await;
+            replace_files_recur(sub_entry.path()).await?;
         } else {
             let replaced_path: PathBuf = sub_entry
                 .path()
