@@ -1,0 +1,21 @@
+[package]
+name = "profile"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = { version = "0.4.14", features = ["std"] }
+futures = "0.3.24"
+tokio = { version = "1.21", features = [
+  "fs",
+  "time",
+  "tracing",
+  "process",
+  "macros",
+  "rt",
+  "io-util",
+  "rt-multi-thread",
+] }
+async-recursion = "1.0.0"
