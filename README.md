@@ -1,2 +1,2 @@
 # profile
-Replace files by profile
+Switch files by profile
