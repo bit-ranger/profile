@@ -7,7 +7,7 @@ use tokio::fs::read_dir;
 use tokio::fs::remove_file;
 
 #[derive(StructOpt)]
-#[structopt(name = "chord")]
+#[structopt(name = "profile")]
 struct Profile {
     #[structopt(short, long)]
     name: String,
